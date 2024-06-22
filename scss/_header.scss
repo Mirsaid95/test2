@@ -1,0 +1,223 @@
+    .header.toggle {
+        .header__list {
+            bottom: 0;
+            left: 0;
+            width: 40%;
+        }
+
+        .header__togl-logo {
+            top: 0;
+        }
+    }
+
+
+
+
+
+
+    .header {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        box-shadow: 2px 5px 5px black;
+        z-index: 999;
+
+        &__nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            justify-content: space-between;
+
+        }
+
+        &__list {
+            position: fixed;
+            display: flex;
+            width: 40%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            height: 100vh;
+            background-color: rgb(62, 114, 255);
+            left: 0;
+            bottom: -100%;
+            z-index: 1;
+            transition: 1s;
+        }
+
+        &__togl-logo {
+            position: fixed;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            justify-content: flex-start;
+
+            top: -100%;
+            gap: 15px;
+            left: 0;
+            color: white;
+            width: 40%;
+            height: 21vh;
+            z-index: 2;
+            background-color: rgb(62, 114, 255);
+            transition: 1s;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/002/202/047/large_2x/blue-high-tech-futuristic-cyberspace-technology-background-free-vector.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            object-fit: cover;
+
+            img {
+                width: 0%;
+                object-fit: cover;
+            }
+
+        }
+
+        &__togl-list {
+            font-family: sans-serif;
+            text-transform: uppercase;
+            line-height: 45px;
+            letter-spacing: 5px;
+            font-weight: 900;
+            font-size: 26px;
+            background: linear-gradient(-45deg, rgb(183, 198, 255), rgb(170, 170, 254));
+            background-clip: text;
+            color: transparent;
+        }
+
+        &__item {
+            color: rgb(252, 252, 252);
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &__select-button {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: transparent;
+
+        }
+
+        &__select {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            font-size: 18px;
+            background-color: transparent;
+            color: #000dff;
+        }
+
+        &__btn {
+            display: flex;
+            gap: 5px;
+            font-size: 18px;
+            background-color: transparent;
+            padding: 5px 10px;
+            border-radius: 15px;
+            border: none;
+            align-items: center;
+            color: #000dff;
+            border: 1px solid;
+            cursor: pointer;
+            &:hover{
+                transition: 0.5s;
+                transform: scale(1.1);
+                box-shadow: 1px 1px 3px #000dff;
+            }
+
+        }
+
+        &__togl {
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+        }
+
+
+
+    }
+
+
+    @media (min-width: 920px) {
+        .header {
+            
+            padding: 0px 30px;
+
+            &__nav {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            &__button {
+                display: none;
+            }
+
+            &__logo-list {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+            }
+
+            &__logo {
+                display: flex;
+            }
+
+            &__list {
+                position: static;
+                display: block;
+                flex-direction: row;
+                display: flex;
+                background-color: transparent;
+
+            }
+
+            &__link {
+                font-size: 14px;
+                font-weight: 300;
+
+            }
+
+            &__item {
+                color: black;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .header {
+            &__nav {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+            }
+
+
+
+            &__item {
+                font-size: 20px;
+                font-weight: 400;
+
+            }
+
+            &__logo-list {
+                display: flex;
+                align-items: center;
+                gap: 140px;
+            }
+
+
+        }
+    }
