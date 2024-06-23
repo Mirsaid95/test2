@@ -1,0 +1,150 @@
+.chance3 {
+    width: 100%;
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        border-top: 1px solid black;
+        padding: 50px 0px;
+
+    }
+
+    &__point-title-list {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__point-list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__point {
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background-color: blue;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.273);
+        border-radius: 10px;
+    }
+
+    &__img {
+        width: 100%;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    &__text-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Michroma", sans-serif;
+    }
+
+    &__list {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.467);
+    }
+
+    &__btn {
+        width: 30%;
+        padding: 5px;
+        font-size: 14px;
+        border: none;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+
+
+    @media (min-width: 920px) {
+        .chance3 {
+            width: 100%;
+
+            &__item {
+                // width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            &__img {
+                width: 50%;
+
+                img {
+                    width: 50%;
+                }
+            }
+
+            &__cards {
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            &__text-btn {
+                display: flex;
+                gap: 20px;
+                width: 80%;
+
+            }
+            &__point-title-list{
+                display: flex;
+                gap: 50px;
+            }
+            &__point-list{
+                width: 10%;
+                font-size: 18px;
+            }
+
+            &__title{
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            &__point-title{
+                width: 30%;
+                font-size: 32px;
+            }
+
+            &__list{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            &__btn{
+                width: 20%;
+                padding: 10px 40px;
+                border-radius: 50px;
+                border: 1px solid rgba(0, 0, 0, 0.457);
+                background-color: transparent;
+                color: blue;
+            }
+        }
+    }
+}

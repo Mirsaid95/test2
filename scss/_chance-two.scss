@@ -1,7 +1,7 @@
-.chance2{
+.chance2 {
     width: 100%;
 
-    &__items{
+    &__items {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -9,35 +9,36 @@
 
     }
 
-    &__point-title-list{
+    &__point-title-list {
         display: flex;
         gap: 15px;
     }
 
-    &__point-list{
+    &__point-list {
         display: flex;
         gap: 10px;
     }
 
-    &__point{
+    &__point {
         width: 15px;
         height: 15px;
         border-radius: 50px;
         background-color: blue;
     }
 
-    &__item{
+    &__item {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    &__boxs{
+    &__boxs {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    &__cards{
+
+    &__cards {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -46,18 +47,20 @@
         background-color: whitesmoke;
         border-radius: 10px;
         padding: 10px;
-        img{
+
+        img {
             width: 70%;
         }
     }
 
-    &__list{
+    &__list {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 10px;
         font-size: 18px;
-        .fa-solid{
+
+        .fa-solid {
             color: blue;
         }
     }
@@ -65,47 +68,49 @@
 }
 
 
-@media (min-width: 768px){
-    .chance2{
+@media (min-width: 768px) {
+    .chance2 {
         width: 100%;
 
-        &__point-title-list{
+        &__point-title-list {
             display: flex;
             width: 100%;
             gap: 30px;
         }
 
-        &__point-list{
+        &__point-list {
             font-size: 24px;
         }
 
-        &__title{
+        &__title {
             width: 30%;
             font-size: 32px;
         }
 
-        &__item{
+        &__item {
             display: flex;
             flex-direction: row;
             gap: 30px;
             justify-content: flex-end;
         }
 
-        &__cards{
+        &__cards {
             display: flex;
             align-items: flex-start;
             padding: 40px 60px;
-            img{
+
+            img {
                 width: 50%;
             }
         }
 
-        &__list{
+        &__list {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             text-align: start;
-            .fa-solid{
+
+            .fa-solid {
                 font-size: 28px;
             }
         }

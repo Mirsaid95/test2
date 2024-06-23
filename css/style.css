@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 .header.toggle .header__list {
   bottom: 0;
   left: 0;
@@ -758,6 +759,8 @@
   }
   .chance__items {
     width: 100%;
+    border-top: 1px solid black;
+    padding: 40px 0px;
   }
   .chance__title {
     width: 30%;
@@ -883,5 +886,128 @@
   }
   .chance2__list .fa-solid {
     font-size: 28px;
+  }
+}
+.chance3 {
+  width: 100%;
+}
+.chance3__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-top: 1px solid black;
+  padding: 50px 0px;
+}
+.chance3__point-title-list {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.chance3__point-list {
+  display: flex;
+  gap: 10px;
+}
+.chance3__point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: blue;
+}
+.chance3__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.chance3__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.273);
+  border-radius: 10px;
+}
+.chance3__img {
+  width: 100%;
+}
+.chance3__img img {
+  width: 60%;
+}
+.chance3__text-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.chance3__title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Michroma", sans-serif;
+}
+.chance3__list {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.467);
+}
+.chance3__btn {
+  width: 30%;
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+@media (min-width: 920px) {
+  .chance3 .chance3 {
+    width: 100%;
+  }
+  .chance3 .chance3__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .chance3 .chance3__img {
+    width: 50%;
+  }
+  .chance3 .chance3__img img {
+    width: 50%;
+  }
+  .chance3 .chance3__cards {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  }
+  .chance3 .chance3__text-btn {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+  }
+  .chance3 .chance3__point-title-list {
+    display: flex;
+    gap: 50px;
+  }
+  .chance3 .chance3__point-list {
+    width: 10%;
+    font-size: 18px;
+  }
+  .chance3 .chance3__title {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .chance3 .chance3__point-title {
+    width: 30%;
+    font-size: 32px;
+  }
+  .chance3 .chance3__list {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .chance3 .chance3__btn {
+    width: 20%;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.457);
+    background-color: transparent;
+    color: blue;
   }
 }
