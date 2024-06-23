@@ -189,6 +189,7 @@
   padding: 20px 20px;
   display: flex;
   align-items: center;
+  max-width: 1440px;
 }
 
 .hero {
@@ -454,11 +455,12 @@
 .thegoal__items {
   width: 100%;
   display: flex;
-  flex-direction: column;
   gap: 20px;
+  flex-direction: column;
   justify-content: center;
   border-top: 1px solid black;
   padding: 50px 0px;
+  justify-content: flex-end;
 }
 .thegoal__item {
   display: flex;
@@ -558,7 +560,231 @@
   }
   .thegoal__items {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1f));
+    display: flex;
+    padding: 30px 18px;
+  }
+  .thegoal__item-list {
+    font-size: 18px;
+  }
+  .thegoal__item-lists {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 40px 0px;
+    gap: 30px;
+  }
+  .thegoal__item {
+    width: 20%;
+  }
+  .thegoal__box-list {
+    display: flex;
+    gap: 20px;
+  }
+  .thegoal__item-img {
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 20px;
+  }
+  .thegoal__item-img img {
+    width: 100%;
+  }
+  .thegoal__title {
+    font-size: 48px;
+  }
+}
+.education {
+  width: 100%;
+}
+.education__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid;
+  padding: 50px 0px;
+}
+.education__box-desc {
+  display: flex;
+  gap: 20px;
+}
+.education__title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  line-height: 30px;
+}
+.education__pnt-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.education__point {
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+.education__boxs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.education__box-img-link {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.education__btn-link {
+  width: 30%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0px;
+  font-size: 16px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+}
+.education__btn-link .fa-solid {
+  color: white;
+}
+.education__link {
+  color: white;
+}
+.education__list {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.education__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.education__image img {
+  width: 70%;
+  height: 250px;
+}
+
+@media (min-width: 1200px) {
+  .education {
+    width: 100%;
+  }
+  .education__box-desc {
+    gap: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .education__title-pnt {
+    width: 40%;
+    font-size: 28px;
+  }
+  .education__list-pnt {
+    font-size: 22px;
+  }
+  .education__btn-link {
+    background-color: transparent;
+  }
+  .education__btn-link .fa-solid {
+    color: blue;
+  }
+  .education__link {
+    color: blue;
+  }
+}
+.chance {
+  width: 100%;
+}
+.chance__items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chance__point-title-list {
+  display: flex;
+  gap: 50px;
+}
+.chance__point-list {
+  display: flex;
+  gap: 10px;
+}
+.chance__point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: blue;
+}
+.chance__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.chance__img-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid;
+  padding: 10px 0px;
+}
+.chance__title {
+  width: 40%;
+}
+
+@media (min-width: 786px) {
+  .chance {
+    width: 100%;
+  }
+  .chance__items {
+    width: 100%;
+  }
+  .chance__title {
+    width: 30%;
+    font-size: 30px;
+  }
+  .chance__point-list {
+    font-size: 20px;
+  }
+  .chance__item {
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: row;
+    padding-left: 170px;
+    gap: 50px;
+  }
+  .chance__box {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .chance__list {
+    font-size: 24px;
+  }
+  .chance__img-list {
+    width: 100%;
+  }
+  .chance__img-list img {
+    width: 30%;
   }
 }
