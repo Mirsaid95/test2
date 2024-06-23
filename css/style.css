@@ -902,7 +902,7 @@
 .chance3__point-title-list {
   width: 100%;
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 .chance3__point-list {
   display: flex;
@@ -969,7 +969,7 @@
     width: 50%;
   }
   .chance3 .chance3__img img {
-    width: 50%;
+    width: 70%;
   }
   .chance3 .chance3__cards {
     width: 80%;
@@ -1003,11 +1003,148 @@
     line-height: 30px;
   }
   .chance3 .chance3__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
     padding: 10px 40px;
     border-radius: 50px;
     border: 1px solid rgba(0, 0, 0, 0.457);
     background-color: transparent;
     color: blue;
+  }
+}
+
+.international {
+  width: 100%;
+}
+.international__items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.international__point-title-list {
+  display: flex;
+  gap: 20px;
+}
+.international__point-list {
+  display: flex;
+  gap: 10px;
+}
+.international__point {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: blue;
+}
+.international__item {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.international__cards-img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  padding: 45px 0px;
+  background-image: url(../images/woman-wearing-virtual-reality-simulator\ 1.svg);
+}
+.international__img-list {
+  font-size: 14px;
+  width: 40%;
+  color: rgb(0, 0, 255);
+}
+.international__boxs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.international__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 10px;
+  border-radius: 5px;
+}
+.international__text-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.691);
+}
+.international__text-list .fa-solid {
+  font-size: 28px;
+}
+.international__btn {
+  width: 30%;
+  padding: 5px;
+  font-size: 14px;
+  color: blue;
+  border: none;
+}
+
+@media (min-width: 920px) {
+  .international {
+    width: 100%;
+    padding: 50px 20px;
+    border-top: 1px solid;
+  }
+  .international__items {
+    width: 100%;
+    display: flex;
+  }
+  .international__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .international__cards-img {
+    width: 60%;
+    height: 400px;
+  }
+  .international__boxs {
+    display: flex;
+    width: 40%;
+    height: 400px;
+    gap: 20px;
+  }
+  .international__card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .international__point-list {
+    font-size: 18px;
+    width: 15%;
+  }
+  .international__point-title {
+    font-size: 32px;
+    width: 50%;
+  }
+  .international__text-list {
+    font-size: 22px;
+  }
+  .international__text-list .fa-solid {
+    font-size: 44px;
+  }
+  .international__btn {
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px 40px;
   }
 }
