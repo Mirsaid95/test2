@@ -1,0 +1,108 @@
+.news{
+    width: 100%;
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-top: 1px solid;
+        padding: 80px 0px;
+    }
+
+    &__point-title-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__point-list{
+        display: flex;
+        gap: 10px;
+    }
+
+    &__point{
+        width: 15px;
+        height: 15px;
+        border-radius: 30px;
+        background-color: blue;
+        font-size: 16px;
+    }
+
+    &__list{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &__cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+        gap: 20px;
+    }
+
+    &__card{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__list-icon{
+        display: flex;
+        font-size: 14px;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+        
+}
+
+@media (min-width: 920px){
+    .news{
+        &__items{
+            width: 100%;
+            display: flex;
+        }
+        &__point-title-list{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        &__point-list{
+            width: 30%;
+            font-size: 18px;
+        }
+        &__point-title{
+            width: 35%;
+            font-size: 32px;
+        }
+        &__list{
+            width: 30%;
+            font-size: 18px;
+        }
+
+        &__list-icon{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            padding: 5px 15px;
+
+            .fa-solid{
+                font-size: 18px;
+                color: blue;
+            }
+        }
+
+
+
+
+
+
+
+    }
+}
