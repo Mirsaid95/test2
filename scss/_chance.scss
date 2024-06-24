@@ -47,7 +47,7 @@
 
 }
 
-@media (min-width: 786px){
+@media (min-width: 920px){
     .chance{
         width: 100%;
 
@@ -55,10 +55,16 @@
             width: 100%;
             border-top: 1px solid black;
             padding: 40px 0px;
+            align-items: end;
+            justify-content: end;
     
         }
+
+        &__point-title-list{
+            width: 85%;
+        }
         &__title{
-            width: 30%;
+            width: 100%;
             font-size: 30px;
         }
 
@@ -67,10 +73,10 @@
         }
 
         &__item{
+            width: 85%;
             display: flex;
             padding: 50px 0px;
             flex-direction: row;
-            padding-left: 170px;
             gap: 50px;
         }
         &__box{

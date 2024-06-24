@@ -68,13 +68,21 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 920px) {
     .chance2 {
+
         width: 100%;
 
-        &__point-title-list {
-            display: flex;
+        &__items{
             width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+        }
+
+        &__point-title-list{
+            width: 85%;
+            display: flex;
             gap: 30px;
         }
 
@@ -88,6 +96,7 @@
         }
 
         &__item {
+            width: 85%;
             display: flex;
             flex-direction: row;
             gap: 30px;

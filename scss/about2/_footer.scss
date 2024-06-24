@@ -1,0 +1,197 @@
+.footer {
+    width: 100%;
+
+    &__boxs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-top: 1px solid;
+        margin-top: 80px;
+        padding: 50px 0px;
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: #56585E;
+    }
+
+    &__icon-links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        font-family: Michroma   ;
+        .fa-regular{
+            color: orange;
+        }
+
+        .fa-phone{
+            color: blue;
+        }
+
+        .fa-location-dot{
+            color: green;
+        }
+    }
+
+
+    .icn {
+        display: none;
+    }
+
+    &__apps-brows{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    &__app{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 30px;
+
+        .fa-rotate-by{
+            display: none;
+        }
+
+        .fa-telegram{
+            
+            color: blue;
+        }
+
+        .fa-instagram{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            color: blueviolet;
+            background-color: red;
+            border-radius: 20px;
+            width: 16px;
+            height: 15.8px;
+            
+        }
+        .fa-facebook{
+            color: blue;
+        }
+
+    }
+
+}
+
+@media (min-width: 920px){
+    .footer{
+        width: 100%;
+        padding: 40px 30px;
+
+        &__boxs{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        &__image{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__cards{
+            width: 100%;
+            display: flex;
+        }
+
+        &__items{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__link{
+            font-size: 24px;
+            font-family: Poppins;
+        }
+        &__icon-links{
+            width: 50%;
+            display: flex;
+            gap: 30px;
+        }
+
+        &__info{
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            .m{
+                font-size: 30px;
+            }
+
+            .t{
+                font-size: 30px;
+            }
+            .l{
+                font-size: 30px;
+            }
+        }
+
+        &__app-info{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: Michroma;
+        }
+        &__app{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            border: none;
+        }
+    }
+}

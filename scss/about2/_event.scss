@@ -1,0 +1,142 @@
+.event{
+    width: 100%;
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__images{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image1{
+        display: none;
+    }
+    &__image3{
+        display: none;
+    }
+
+    &__image2{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__list-button{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__list{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__button{
+        display: flex;
+        gap: 10px;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 20px;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+    }
+
+}
+
+@media (min-width: 920px){
+    .event{
+        width: 100%;
+
+
+        &__items{
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: end;
+            justify-content: end;
+
+            h1{
+                width: 92%;
+                font-size: 36px;
+            }
+        }
+
+        &__images{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+
+
+        &__image1{
+            width: 49%;
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__image2{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+                background-size: cover;
+            }
+        }
+        &__image3{
+            width: 49%;
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__list-button{
+            width: 92%;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__list{
+            width: 70%;
+            line-height: 30px;
+            font-size: 24px;
+            color: #666666;
+            font-family: Michroma;
+        }
+        &__btn{
+            padding: 15px 40px;
+            border-radius: 30px;
+            background-color: blue;
+            color: white;
+            border: 1px solid;
+        }
+
+        &__btn:nth-child(1){
+            color: #CCCCCC;
+            border: 1px solid color #CCCCCC;
+            background-color: transparent;
+        }
+
+
+    }
+}

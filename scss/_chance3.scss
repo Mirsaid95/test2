@@ -8,11 +8,13 @@
         gap: 50px;
         border-top: 1px solid black;
         padding: 50px 0px;
+        align-items: end;
+        justify-content: end;
 
     }
 
     &__point-title-list {
-        width: 100%;
+        width: 85%;
         display: flex;
         gap: 20px;
     }
@@ -29,7 +31,7 @@
         background-color: blue;
     }
 
-    &__item {
+    &__item{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
