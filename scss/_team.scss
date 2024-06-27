@@ -93,14 +93,13 @@
         &__cards{
             width: 100%;
             display: flex;
-            margin-left: 100px;
             margin-top: 150px;
         }
 
         &__card{
             width: 50%;
             img{
-                width: 40%;
+                width: 50%;
             }
         }
 

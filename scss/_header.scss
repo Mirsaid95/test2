@@ -9,6 +9,9 @@
             top: 0;
         }
     }
+    .header__liink{
+        color: white;
+    }
 
 
 
@@ -47,6 +50,8 @@
             bottom: -100%;
             z-index: 1;
             transition: 1s;
+
+
         }
 
         &__togl-logo {
@@ -90,11 +95,13 @@
             color: transparent;
         }
 
-        &__item {
+        &__item{
             color: rgb(252, 252, 252);
             font-size: 18px;
             font-weight: 400;
+
         }
+
 
         &__select-button {
             display: flex;
@@ -173,24 +180,13 @@
             }
 
             &__list {
-                position: static;
-                display: block;
-                flex-direction: row;
                 display: flex;
-                background-color: transparent;
-
+                flex-direction: row;
+                display: block;
+                position: static;
+                // background-color: transparent;
             }
 
-            &__link {
-                font-size: 14px;
-                font-weight: 300;
-
-            }
-
-            &__item {
-                color: black;
-                font-size: 16px;
-            }
 
         }
     }
@@ -207,16 +203,14 @@
 
 
 
-            &__item {
-                font-size: 20px;
-                font-weight: 400;
-
-            }
-
             &__logo-list {
                 display: flex;
                 align-items: center;
                 gap: 140px;
+            }
+
+            &__liink{
+                color: black;
             }
 
 

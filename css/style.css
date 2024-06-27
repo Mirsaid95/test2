@@ -24,6 +24,9 @@
   justify-content: center;
   justify-content: space-between;
 }
+a{
+  color: white !important;
+}
 .header__list {
   position: fixed;
   display: flex;
@@ -1478,14 +1481,13 @@
   .team__cards {
     width: 100%;
     display: flex;
-    margin-left: 100px;
     margin-top: 150px;
   }
   .team__card {
     width: 50%;
   }
   .team__card img {
-    width: 40%;
+    width: 50%;
   }
 }
 .about2 {
